@@ -1,0 +1,11 @@
+﻿@model GetContents.Models.YouModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h1>YouTube Video Downloader</h1>
+
+<form method="post" action="/Home/Download">
+    <label for="videoUrl">YouTube Video URL:</label>
+    <input type="text" id="videoUrl" name="videoUrl" required>
+    <input type="submit" value="Download">
+</form>
